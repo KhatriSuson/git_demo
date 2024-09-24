@@ -1,1 +1,97 @@
-<p>Hello world!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styling for blog items */
+        .blog-item {
+            margin-bottom: 40px;
+            align-items: center;
+        }
+        .blog-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .blog-item h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+        .blog-item p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+        /* Mobile responsive stacking for blog items */
+        @media (max-width: 768px) {
+            .blog-item {
+                flex-direction: column;
+            }
+            .blog-item img {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text-center mb-4">My Blog</h1>
+
+    <div id="blog-container">
+        <!-- Blog item 1 (Odd: Image Left, Text Right) -->
+        <div class="row blog-item d-flex flex-md-row flex-column-reverse">
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x300" alt="Image 1" class="img-fluid blog-image">
+            </div>
+            <div class="col-md-6">
+                <h3>Blog Title 1</h3>
+                <p>This is a description for blog item 1. The image is on the left, and text is on the right for odd rows.</p>
+            </div>
+        </div>
+
+        <!-- Blog item 2 (Even: Text Left, Image Right) -->
+        <div class="row blog-item d-flex">
+            <div class="col-md-6">
+                <h3>Blog Title 2</h3>
+                <p>This is a description for blog item 2. The image is on the right, and text is on the left for even rows.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x300" alt="Image 2" class="img-fluid blog-image">
+            </div>
+        </div>
+
+        <!-- Blog item 3 (Odd: Image Left, Text Right) -->
+        <div class="row blog-item d-flex flex-md-row flex-column-reverse">
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x300" alt="Image 3" class="img-fluid blog-image">
+            </div>
+            <div class="col-md-6">
+                <h3>Blog Title 3</h3>
+                <p>This is a description for blog item 3. The image is on the left, and text is on the right for odd rows.</p>
+            </div>
+        </div>
+
+        <!-- Blog item 4 (Even: Text Left, Image Right) -->
+        <div class="row blog-item d-flex">
+            <div class="col-md-6">
+                <h3>Blog Title 4</h3>
+                <p>This is a description for blog item 4. The image is on the right, and text is on the left for even rows.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x300" alt="Image 4" class="img-fluid blog-image">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS (for responsive layout and utility classes) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
